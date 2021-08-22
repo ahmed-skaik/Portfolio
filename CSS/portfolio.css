@@ -115,7 +115,7 @@ header .container {
 }
 
 header .container img {
-  width: 45px;
+  width: 35px;
 }
 
 header .container nav {
@@ -198,10 +198,6 @@ header .container nav ul a:hover {
   background-color: rgb(0 0 0 / 35%);
 }
 
-/* .landing .container {
-
-} */
-
 .landing .container .intro-txt {
   position: absolute;
   top: 50%;
@@ -274,10 +270,6 @@ header .container nav ul a:hover {
 /* landing end  */
 
 /* about start  */
-/* .about {
-
-} */
-
 .about .container {
   display: flex;
   align-items: center;
@@ -362,33 +354,6 @@ header .container nav ul a:hover {
   display: flex;
 }
 
-/* .special-heading {
-  flex-basis: 30%;
-  padding: 0 15px;
-}
-
-.work .container .txt h2 {
-  margin: 20px 0 18px;
-  font-size: 24px;
-  color: #2f2f2f;
-  font-weight: 4000;
-  font-weight: 400;
-}
-
-.work .container .txt .hr {
-  background-color: #dedede;
-  width: 35px;
-  height: 3px;
-}
-
-.work .container .txt p {
-  margin-top: 70px;
-  font-weight: 400;
-  font-size: 14px;
-  letter-spacing: 0.4px;
-  line-height: 30px;
-} */
-
 .work .container .web-sites {
   flex-basis: 75%;
   display: flex;
@@ -398,21 +363,114 @@ header .container nav ul a:hover {
 }
 
 .work .container .web-sites .img-box {
-  flex-basis: 50%;
+  flex-basis: 45%;
   overflow: hidden;
-  padding: 10px;
+  margin: 10px;
   position: relative;
+  text-align: center;
 }
 
-.work .container .web-sites .img-box::after {
-  content: "";
+.work .container .web-sites .img-box .img-caption {
   position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: -100%;
+    transition: 0.3s;
+    color: white;
+    padding: 20px;
 }
+
+.work .container .web-sites .img-box .img-caption h3 {
+  font-size: 18px;
+  padding: 4px 0;
+}
+
+.work .container .web-sites .img-box .img-caption img {
+  width: 45px;
+  height: 50px;
+  object-fit: contain;
+  margin: 10px 0;
+}
+
+.work .container .web-sites .img-box .img-caption i {
+  display: block;
+  font-size: 25px;
+  margin: 16px 0;
+}
+
+@media (max-width: 767px) {
+  .work .container .web-sites .img-box .img-caption i {
+    margin: 0;
+  }
+
+  .work .container .web-sites .img-box .img-caption h3 {
+    padding: 0;
+  }
+
+  .work .container .web-sites .img-box .img-caption img {
+    height: 38px;
+  }
+}
+
+/* .work .container .web-sites .img-box .img-caption p {
+
+}
+
+.work .container .web-sites .img-box .img-caption p span {
+  
+} */
+
+.work .container .web-sites .img-box .kasper {
+  background-color:  rgb(15 116 143 / 70%);
+  font-family: 'Open Sans', sans-serif;
+} 
+
+.work .container .web-sites .img-box .yellow-moon {
+  background-color: rgb(255 230 0 / 70%);
+  font-family: 'Roboto', sans-serif;
+}
+
+.work .container .web-sites .img-box .wooster {
+  background-color: rgb(0 0 0 / 70%);
+  font-family: 'Lato', sans-serif;
+}
+
+.work .container .web-sites .img-box .leon {
+  background-color: rgb(16 202 183 / 70%);
+  font-family: 'Work Sans', sans-serif;
+}
+
+.work .container .web-sites .img-box:hover .img-caption {
+bottom: 0;
+}
+
+/* .work .container .web-sites .img-box:hover img {
+  transform: scale(1.1);
+} */
+
+/* .work .container .web-sites .img-box::after {
+  content: "Hello there";
+  position: absolute;
+  color: white;
+  background-color: rgb(0 0 0 / 50%);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  left: 0;
+  bottom: -100%;
+  transition: 0.3s;
+}
+
+.work .container .web-sites .img-box:hover::after {
+  bottom: 0;
+} */
 
 .work .container .web-sites .img-box img {
   max-width: 100%;
   object-fit: cover;
   height: 100%;
+  transition: 0.3s;
 }
 
 @media (max-width: 767px) {
@@ -467,6 +525,11 @@ header .container nav ul a:hover {
 
 .skills .container .prog-holder h4.progg {
   color: #ccc;
+  transition: 0.3s;
+}
+
+.skills .container .prog-holder:hover h4.progg {
+  color: var(--id-color);
 }
 
 .skills .container .prog-holder h4 i {
@@ -500,6 +563,11 @@ header .container nav ul a:hover {
 
 .skills .container .prog-holder .prog span.on-prog {
   background-color: #ccc;
+  transition: 0.3s;
+}
+
+.skills .container .prog-holder:hover .prog .on-prog  {
+  background-color: #818181;
 }
 
 .skills .container .prog-holder .prog span::before {
@@ -560,7 +628,11 @@ header .container nav ul a:hover {
 
 footer .container {
   position: relative;
+}
 
+footer .container img {
+  width: 130px;
+  margin-bottom: 30px;
 }
 
 
@@ -577,7 +649,7 @@ footer .container {
   }
 
   footer .container p span {
-    font-weight: 400;
+    font-weight: 500;
   }
 
   footer .container .hr {
