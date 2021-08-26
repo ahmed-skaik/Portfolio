@@ -99,13 +99,13 @@ color: white;
 
 /* header start */
 header {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   position: absolute;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  background-color: rgb(255 255 255 / 80%);
+  background-color: rgb(255 255 255 / 60%);
 }
 
 header .container {
@@ -115,7 +115,7 @@ header .container {
 }
 
 header .container img {
-  width: 35px;
+  width: 40px;
 }
 
 header .container nav {
@@ -358,12 +358,12 @@ header .container nav ul a:hover {
 }
 
 .work .container .web-sites .img-box {
-  flex-basis: 45%;
+  flex-basis: 48%;
   overflow: hidden;
-  margin: 10px;
+  margin: 6px;
   position: relative;
   text-align: center;
-  outline: 0.1px solid #ccc;
+  outline: 0.1px solid rgb(0 0 0 / 10%);
 }
 
 .work .container .web-sites .img-box .img-caption {
@@ -484,6 +484,24 @@ bottom: 0;
   }
 }
 
+@media (max-width: 992px) {
+  .work .container {
+    flex-direction: column;
+  }
+
+  .work .container .web-sites {
+    padding: 0;
+  }
+
+  .work .container .web-sites .img-box {
+    flex-basis: 48%;
+  }
+
+  .work .container .web-sites .img-box .img-caption i {
+    margin: 6px 0;
+  }
+}
+
 /* work end */
 
 /* skills start */
@@ -501,7 +519,7 @@ bottom: 0;
   padding: 0 20px 0 60px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .skills .container {
     flex-direction: column;
   }
