@@ -122,7 +122,6 @@ header .container nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  flex: 1;
   overflow: hidden;
 }
 
@@ -190,6 +189,8 @@ header .container nav ul a:hover {
   background-image: url(../Images/hero1.jpeg);
   height: 100vh;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .landing .over-lay {
@@ -276,8 +277,6 @@ header .container nav ul a:hover {
 }
 
 .about .container {
-  margin-left: 0;
-  margin-right: 0;
   padding-right: 0;
   padding-left: 0;
 }
@@ -292,10 +291,6 @@ header .container nav ul a:hover {
   .about .container .img {
     background-color: transparent;
   }
-}
-
-.about .container .img img {
-  height: 94vh;
 }
 
 .about .container table {
@@ -368,6 +363,7 @@ header .container nav ul a:hover {
   margin: 10px;
   position: relative;
   text-align: center;
+  outline: 0.1px solid #ccc;
 }
 
 .work .container .web-sites .img-box .img-caption {
@@ -609,6 +605,8 @@ bottom: 0;
     text-align: center;
     background-image: url(../Images/testimonial-bg.jpg);
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
   }
 
