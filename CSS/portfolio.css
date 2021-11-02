@@ -28,20 +28,23 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 11px;
+  height: 11px;
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: var(--id-color);
-  border: 1px solid #777;
+  border: 1px solid #eee;
   border-radius: 100px;
 }
 
+body::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(47 47 47 / 85%);
+}
+
 body::-webkit-scrollbar-track {
-  background-color: #eee;
-  border-left: 1px solid #ccc;
-  border-radius: 100px;
+  border-left: 1px solid #eee;
+  border-top: 1px solid #eee;
 }
 
 body::-webkit-scrollbar-corner {
@@ -244,7 +247,7 @@ header .container nav ul a:hover {
 .landing .over-lay {
   width: 100%;
   height: 100%;
-  background-color: rgb(0 0 0 / 50%);
+  background-color: rgb(0 0 0 / 70%);
 }
 
 .landing .container .intro-txt {
@@ -497,6 +500,17 @@ header .container nav ul a:hover {
   font-family: 'Montserrat', sans-serif;
 }
 
+.work .container .web-sites .img-box .elzero {
+  background-color: rgb(33 150 243 / 70%);
+  font-family: 'Cairo', sans-serif;
+}
+
+.work .container .web-sites .img-box .elzero h4 {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 25px 0;
+}
+
 .work .container .web-sites .img-box:hover .img-caption {
 bottom: 0;
 }
@@ -573,7 +587,7 @@ bottom: 0;
 
 .skills .container .prog-holder h4.progg {
   color: #ccc;
-  transition: 0.3s;
+  transition: 0.9s;
 }
 
 .skills .container .prog-holder:hover h4.progg {
@@ -623,6 +637,10 @@ bottom: 0;
   height: 8px;
   padding: 2px;
   margin-bottom: 40px;
+}
+
+.skills .skills-stat .prog-holder .prog span{
+  transition: 0.9s;
 }
 
 .skills .container .prog-holder .prog span:not(.mark, .message) {
@@ -676,7 +694,7 @@ bottom: 0;
 
 .skills .container .prog-holder .prog span.on-prog {
   background-color: #ccc;
-  transition: 0.3s;
+  /* transition: 0.3s; */
 }
 
 .skills .container .prog-holder:hover .prog .on-prog  {
@@ -732,7 +750,7 @@ footer {
 footer .over-lay {
   width: 100%;
   height: 100%;
-  background-color: rgb(0 0 0 / 50%);
+  background-color: rgb(0 0 0 / 70%);
   position: absolute;
   top: 0;
   left: 0;
