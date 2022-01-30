@@ -1,6 +1,16 @@
 let welcomeMsg = `Hello from JS`
 console.log(welcomeMsg)
 
+// loading screen start
+function loading() {
+  const loader = document.querySelector(".loading")
+  loader.className += " hidden"
+}
+
+window.addEventListener("load", loading)
+
+// loading screen end 
+
 // scroll up start
 let btn = document.getElementById("btn")
 
