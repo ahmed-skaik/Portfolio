@@ -646,6 +646,10 @@ bottom: 0;
   color: #264de4;
 }
 
+.skills .container .prog-holder h4.sass i {
+  color: #cc6699;
+}
+
 .skills .container .prog-holder h4.js i {
   color: #f0db4f;
   background-color: #323330;
