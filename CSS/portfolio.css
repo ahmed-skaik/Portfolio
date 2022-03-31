@@ -132,6 +132,7 @@ color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  user-select: none;
 }
 
 .loading p {
@@ -646,6 +647,10 @@ bottom: 0;
   color: #264de4;
 }
 
+.skills .container .prog-holder h4.bootstrap i {
+  color: #7c69ef;
+}
+
 .skills .container .prog-holder h4.sass i {
   color: #cc6699;
 }
@@ -832,6 +837,11 @@ font-weight: 300;
 
 footer .container p span {
   font-weight: 500;
+  cursor: pointer;
+}
+
+footer .container p span:hover {
+  text-decoration: underline;
 }
 
 footer .container .hr {
