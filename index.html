@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ontouchmove>
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -45,8 +45,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- js code  "thes blcok of code along side with the attributes in the <html> and the <body> are for making hte hover effect work as touch in iPhones !"-->
+    <script>
+      document.addEventListener("click", x=>0)
+    </script>
   </head>
-  <body>
+  <body onclick tabindex="0">
     <!-- loading screen start  -->
     <div class="loading">
       <p>Loading...</p>
