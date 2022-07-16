@@ -280,7 +280,7 @@ header .container nav ul a:hover {
 
 /* landing start  */
 .landing {
-  background-image: url(../Images/landgin.webp);
+  background-image: url(../Images/landgin.png);
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -808,6 +808,10 @@ footer {
   background-image: url(../Images/footer.jpg);
   background-position: center;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
   background-repeat: no-repeat;
   position: relative;
 }
