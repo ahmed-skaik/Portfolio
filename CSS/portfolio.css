@@ -288,6 +288,7 @@ header .container nav ul a:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
+  -ms-background-size: cover;
   background-attachment: fixed;
   -webkit-background-attachment: fixed;
 }
@@ -500,6 +501,10 @@ header .container nav ul a:hover {
   width: 45px;
   height: 50px;
   object-fit: contain;
+  -moz-object-fit: contain;
+  -o-object-fit: contain;
+  -webkit-object-fit: contain;
+  -ms-object-fit: contain;
   margin: 10px 0;
 }
 
@@ -566,6 +571,10 @@ bottom: 0;
 .work .container .web-sites .img-box img {
   max-width: 100%;
   object-fit: cover;
+  -ms-object-fit: cover;
+  -moz-object-fit: cover;
+  -webkit-object-fit: cover;
+  -o-object-fit: cover;
   height: 100%;
   transition: 0.3s;
 }
